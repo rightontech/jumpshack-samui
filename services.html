@@ -1,378 +1,1093 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The full Jump Shack experience — 3m and 5m diving boards, pool, sunbeds, cocktail bar, food, weekly DJ parties and Sunday Roast above Chaweng, Koh Samui." />
-  <title>The Experience — Jump Shack Samui</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="container">
-      <a href="index.html" class="nav__logo" aria-label="Jump Shack — home">Jump<span>.</span></a>
-      <ul class="nav__links" role="list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" aria-current="page">The Experience</a></li>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="contact.html">Find Us</a></li>
-      </ul>
-      <a href="https://wa.me/66855758510" class="btn btn--primary nav__cta" target="_blank" rel="noopener noreferrer" aria-label="Book a table via WhatsApp">Book a Table</a>
-      <button class="nav__hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The full Jump Shack experience — 3m and 5m diving boards, pool, sunbeds, cocktail bar, food, weekly DJ parties and Sunday Roast above Chaweng, Koh Samui."
+    />
+    <title>The Experience — Jump Shack Samui</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="nav__logo" aria-label="Jump Shack — home"
+          >Jump<span>.</span></a
+        >
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="services.html" aria-current="page">The Experience</a>
+          </li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Find Us</a></li>
+        </ul>
+        <a
+          href="https://wa.me/66855758510"
+          class="btn btn--primary nav__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a table via WhatsApp"
+          >Book a Table</a
+        >
+        <button
+          class="nav__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div
+      class="nav__mobile"
+      id="mobile-menu"
+      role="dialog"
+      aria-label="Mobile navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="services.html">The Experience</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Find Us</a>
+      <a
+        href="https://wa.me/66855758510"
+        class="btn btn--primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Book a Table via WhatsApp</a
+      >
     </div>
-  </nav>
-  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html">The Experience</a>
-    <a href="about.html">Our Story</a>
-    <a href="contact.html">Find Us</a>
-    <a href="https://wa.me/66855758510" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book a Table via WhatsApp</a>
-  </div>
 
-  <main>
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-label="Page hero">
+        <div class="page-hero__bg">
+          <!-- TODO: replace with real hero shot -->
+          <img
+            src="assets/651646205_17908464441359598_752889275446466030_n.jpg"
+            alt="Jump Shack diving tower with guests mid-jump into the pool, Koh Samui"
+          />
+        </div>
+        <div class="container">
+          <span class="label">What We Offer</span>
+          <h1>More Than a View</h1>
+          <p>
+            Everything you need for the perfect afternoon — and a few things you
+            didn't know you needed.
+          </p>
+        </div>
+      </section>
 
-    <!-- PAGE HERO -->
-    <section class="page-hero" aria-label="Page hero">
-      <div class="page-hero__bg">
-        <!-- TODO: replace with real hero shot -->
-        <img src="https://placehold.co/1920x800/0D0F14/FF4D6E" alt="Jump Shack pool with mountain views and diving boards, Koh Samui" />
-      </div>
+      <!-- DIVING BOARDS -->
+      <section
+        class="section section--lg"
+        id="boards"
+        aria-labelledby="boards-heading"
+      >
+        <div class="container">
+          <div class="boards-split">
+            <div class="boards-split__img">
+              <img
+                src="assets/617832073_18549842092056053_2903924223127882403_n.jpg"
+                alt="Guests jumping from the 5m diving board at Jump Shack, Koh Samui"
+                loading="lazy"
+              />
+            </div>
+            <div class="boards-split__content">
+              <span class="label">The Jump</span>
+              <h2 id="boards-heading">Samui's Most Photographed Spot</h2>
+              <p>
+                The 3m and 5m diving boards at Jump Shack are unlike any you've
+                seen. You're not just jumping into a pool — you're launching off
+                a mountain with the whole island spread out below you.
+              </p>
+              <p style="margin-top: 1rem">
+                The 5m board is the ultimate Samui photo. The 3m is your
+                warm-up. Both are open throughout the day for all guests.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.75rem;
+                  margin-top: 1.5rem;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      color: var(--accent);
+                      flex-shrink: 0;
+                    "
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Open to all entry guests — no extra charge
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      color: var(--accent);
+                      flex-shrink: 0;
+                    "
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Lifeguard on duty during opening hours
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      color: var(--accent);
+                      flex-shrink: 0;
+                    "
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  3m board suitable for beginners
+                </div>
+              </div>
+              <a
+                href="https://wa.me/66855758510"
+                class="btn btn--primary"
+                style="margin-top: 2rem; align-self: flex-start"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Book your jump via WhatsApp"
+                >Book Your Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POOL & SUNBEDS -->
+      <section
+        class="section"
+        style="
+          background-color: var(--bg-card);
+          border-top: 1px solid var(--border);
+          border-bottom: 1px solid var(--border);
+        "
+        aria-labelledby="pool-heading"
+      >
+        <div class="container">
+          <div class="boards-split">
+            <div class="boards-split__content">
+              <span class="label">Relax</span>
+              <h2 id="pool-heading">Sunbeds &amp; The Pool</h2>
+              <p>
+                Settle into a sunbed, order a cocktail, and do absolutely
+                nothing — while looking at arguably the best view on Koh Samui.
+                The pool is clean, the sun is always perfect, and the crowd is
+                never too big.
+              </p>
+              <p style="margin-top: 1rem">
+                Standard entry includes sunbed access. VIP tables come with
+                dedicated table service and priority sunbed reservation.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.75rem;
+                  margin-top: 1.5rem;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      color: var(--accent-warm);
+                      flex-shrink: 0;
+                    "
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Included in all entry tickets
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      color: var(--accent-warm);
+                      flex-shrink: 0;
+                    "
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Towels available to hire
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      color: var(--accent-warm);
+                      flex-shrink: 0;
+                    "
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Changing rooms on site
+                </div>
+              </div>
+            </div>
+            <div class="boards-split__img">
+              <img
+                src="assets/640448785_17906152731359598_5822630750765182721_n.jpg"
+                alt="Infinity pool at Jump Shack with Chaweng Lake and the Koh Samui mountains behind"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAR & FOOD -->
+      <section class="section section--lg" aria-labelledby="food-heading">
+        <div class="container">
+          <div class="boards-split">
+            <div class="boards-split__img">
+              <img
+                src="assets/610034354_17898878562359598_1973586337694888358_n.jpg"
+                alt="Pizza margherita and Greek salad at the Jump Shack kitchen"
+                loading="lazy"
+              />
+            </div>
+            <div class="boards-split__content">
+              <span class="label">Eat &amp; Drink</span>
+              <h2 id="food-heading">The Bar &amp; Kitchen</h2>
+              <p>
+                We keep the menu tight and the quality high. Cocktails built for
+                the heat, food that actually hits, and a bar team that knows
+                what they're doing.
+              </p>
+              <p style="margin-top: 1rem">
+                On Sundays, we serve a proper Sunday Roast — the kind worth
+                booking a table for. Reservations required.
+              </p>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 1rem;
+                  margin-top: 1.5rem;
+                "
+              >
+                <div
+                  style="
+                    background: var(--bg-card);
+                    border: 1px solid var(--border);
+                    border-radius: var(--radius);
+                    padding: 1.25rem;
+                  "
+                >
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin-bottom: 0.3rem;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    Cocktails
+                  </p>
+                  <p style="font-size: 0.8rem">
+                    Tropical classics and house specials, made properly.
+                  </p>
+                </div>
+                <div
+                  style="
+                    background: var(--bg-card);
+                    border: 1px solid var(--border);
+                    border-radius: var(--radius);
+                    padding: 1.25rem;
+                  "
+                >
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin-bottom: 0.3rem;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    Cold Beers
+                  </p>
+                  <p style="font-size: 0.8rem">
+                    Local and imported. Always cold. Always cold.
+                  </p>
+                </div>
+                <div
+                  style="
+                    background: var(--bg-card);
+                    border: 1px solid var(--border);
+                    border-radius: var(--radius);
+                    padding: 1.25rem;
+                  "
+                >
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin-bottom: 0.3rem;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    Light Bites
+                  </p>
+                  <p style="font-size: 0.8rem">
+                    Snacks and plates to keep the afternoon going.
+                  </p>
+                </div>
+                <div
+                  style="
+                    background: var(--bg-card);
+                    border: 1px solid var(--border);
+                    border-radius: var(--radius);
+                    padding: 1.25rem;
+                  "
+                >
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin-bottom: 0.3rem;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    Sunday Roast
+                  </p>
+                  <p style="font-size: 0.8rem">
+                    Every Sunday. Reservation required.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WEEKLY EVENTS SCHEDULE -->
+      <section
+        class="section"
+        id="events"
+        style="
+          background-color: var(--bg-card);
+          border-top: 1px solid var(--border);
+          border-bottom: 1px solid var(--border);
+        "
+        aria-labelledby="events-heading"
+      >
+        <div class="container">
+          <div class="section-header gsap-hidden">
+            <span class="label">Events</span>
+            <h2 id="events-heading">Weekly Schedule</h2>
+            <p>
+              Something on every day of the week — except Tuesday, when we rest.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--bg-dark);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-lg);
+              overflow: hidden;
+            "
+          >
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Event</th>
+                  <th scope="col">Hours</th>
+                  <th scope="col">Entry</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>Regular Day</td>
+                  <td>12PM – 8PM</td>
+                  <td>฿250</td>
+                </tr>
+                <tr class="closed">
+                  <td>Tuesday</td>
+                  <td><span class="badge badge--closed">Closed</span></td>
+                  <td>—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="special">
+                  <td>Wednesday</td>
+                  <td>
+                    <span class="badge badge--discount">Discount Day</span> —
+                    all the same, 40% off
+                  </td>
+                  <td>12PM – 8PM</td>
+                  <td>฿150</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Regular Day</td>
+                  <td>12PM – 8PM</td>
+                  <td>฿250</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>Regular Day</td>
+                  <td>12PM – 8PM</td>
+                  <td>฿250</td>
+                </tr>
+                <tr class="special">
+                  <td>Saturday</td>
+                  <td>
+                    <span class="badge badge--party">Pool Party</span> — DJ from
+                    12
+                  </td>
+                  <td>12PM – 8PM</td>
+                  <td>฿250</td>
+                </tr>
+                <tr class="special">
+                  <td>Sunday</td>
+                  <td>
+                    <span class="badge badge--special">Sunday Roast</span> —
+                    reservations required
+                  </td>
+                  <td>12PM – 8PM</td>
+                  <td>฿250</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-muted" style="margin-top: 1.25rem; font-size: 0.85rem">
+            Special events and themed nights added regularly. Follow
+            <a
+              href="https://www.instagram.com/jumpshacksamui/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--accent)"
+              >@jumpshacksamui</a
+            >
+            for announcements.
+          </p>
+        </div>
+      </section>
+
+      <!-- VIP & PRIVATE HIRE -->
+      <section
+        class="section section--lg"
+        id="vip"
+        aria-labelledby="vip-heading"
+      >
+        <div class="container">
+          <div class="section-header text-center gsap-hidden">
+            <span class="label">VIP &amp; Private</span>
+            <h2 id="vip-heading">Take It Up a Level</h2>
+            <p>
+              For groups, celebrations, and corporate events that need something
+              memorable.
+            </p>
+          </div>
+          <div style="display: grid; gap: 1.5rem">
+            <div style="display: grid; gap: 1.5rem" class="info-grid">
+              <div class="info-card">
+                <div class="info-card__icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  </svg>
+                </div>
+                <h4>VIP Tables</h4>
+                <p>
+                  Dedicated table service, premium positioning, and priority
+                  sunbed reservation. Minimum spend ฿1,500 per table.
+                </p>
+              </div>
+              <div class="info-card">
+                <div class="info-card__icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+                <h4>Group Bookings</h4>
+                <p>
+                  Groups of 10 or more? Get in touch for bespoke group packages
+                  with preferential entry and F&amp;B deals.
+                </p>
+              </div>
+              <div class="info-card">
+                <div class="info-card__icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    />
+                  </svg>
+                </div>
+                <h4>Exclusive Hire</h4>
+                <p>
+                  Book the entire venue for birthdays, corporate events, brand
+                  activations or weddings. Custom packages available.
+                </p>
+              </div>
+              <div class="info-card">
+                <div class="info-card__icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+                    />
+                  </svg>
+                </div>
+                <h4>Custom Events</h4>
+                <p>
+                  Private DJ sets, themed parties, product launches — we work
+                  with you to create something unforgettable on the mountain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center" style="margin-top: 2.5rem">
+            <a
+              href="contact.html"
+              class="btn btn--primary btn--lg"
+              aria-label="Enquire about VIP and private events at Jump Shack"
+              >Enquire Now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section
+        class="section"
+        id="pricing"
+        style="
+          background-color: var(--bg-card);
+          border-top: 1px solid var(--border);
+        "
+        aria-labelledby="pricing-heading"
+      >
+        <div class="container text-center">
+          <div class="section-header gsap-hidden">
+            <span class="label">Pricing</span>
+            <h2 id="pricing-heading">Simple, Honest Entry</h2>
+          </div>
+          <div class="pricing__grid">
+            <div class="pricing-card">
+              <p class="pricing-card__name">Standard Entry</p>
+              <p class="pricing-card__price">
+                <span class="pricing-card__currency">฿</span>250
+              </p>
+              <p class="pricing-card__note">Mon, Thu, Fri, Sat, Sun</p>
+              <ul>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >Full pool access
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >3m &amp; 5m diving boards
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >Sunbed access
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >Bar &amp; food service
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/66855758510"
+                class="btn btn--outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Book standard entry via WhatsApp"
+                >Book Now</a
+              >
+            </div>
+            <div class="pricing-card pricing-card--featured">
+              <span class="pricing-card__badge">Best Value</span>
+              <p class="pricing-card__name">Wednesday Discount</p>
+              <p class="pricing-card__price">
+                <span class="pricing-card__currency">฿</span>150
+              </p>
+              <p class="pricing-card__note">Wednesdays only</p>
+              <ul>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >Everything in Standard
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >40% off entry
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >Less crowd, same views
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 16px; height: 16px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    /></svg
+                  >Walk-in or pre-book
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/66855758510"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Book Wednesday discount via WhatsApp"
+                >Book Wednesday</a
+              >
+            </div>
+          </div>
+          <p
+            class="text-muted"
+            style="margin-top: 1.5rem; font-size: 0.85rem; margin-inline: auto"
+          >
+            VIP tables from ฿1,500 minimum spend.
+            <a href="contact.html" style="color: var(--accent)"
+              >Enquire for group &amp; VIP rates.</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
       <div class="container">
-        <span class="label">What We Offer</span>
-        <h1>More Than a View</h1>
-        <p>Everything you need for the perfect afternoon — and a few things you didn't know you needed.</p>
-      </div>
-    </section>
-
-    <!-- DIVING BOARDS -->
-    <section class="section section--lg" id="boards" aria-labelledby="boards-heading">
-      <div class="container">
-        <div class="boards-split">
-          <div class="boards-split__img">
-            <!-- TODO: replace with real photography -->
-            <img src="https://placehold.co/800x600/161A22/FF4D6E" alt="Jump Shack 5m diving board platform looking out over Koh Samui coastline" loading="lazy" />
-          </div>
-          <div class="boards-split__content">
-            <span class="label">The Jump</span>
-            <h2 id="boards-heading">Samui's Most Photographed Spot</h2>
-            <p>The 3m and 5m diving boards at Jump Shack are unlike any you've seen. You're not just jumping into a pool — you're launching off a mountain with the whole island spread out below you.</p>
-            <p style="margin-top:1rem;">The 5m board is the ultimate Samui photo. The 3m is your warm-up. Both are open throughout the day for all guests.</p>
-            <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem;">
-              <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width:18px;height:18px;color:var(--accent);flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                Open to all entry guests — no extra charge
-              </div>
-              <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width:18px;height:18px;color:var(--accent);flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                Lifeguard on duty during opening hours
-              </div>
-              <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width:18px;height:18px;color:var(--accent);flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                3m board suitable for beginners
-              </div>
-            </div>
-            <a href="https://wa.me/66855758510" class="btn btn--primary" style="margin-top:2rem;align-self:flex-start;" target="_blank" rel="noopener noreferrer" aria-label="Book your jump via WhatsApp">Book Your Visit</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- POOL & SUNBEDS -->
-    <section class="section" style="background-color: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="pool-heading">
-      <div class="container">
-        <div class="boards-split">
-          <div class="boards-split__content">
-            <span class="label">Relax</span>
-            <h2 id="pool-heading">Sunbeds &amp; The Pool</h2>
-            <p>Settle into a sunbed, order a cocktail, and do absolutely nothing — while looking at arguably the best view on Koh Samui. The pool is clean, the sun is always perfect, and the crowd is never too big.</p>
-            <p style="margin-top:1rem;">Standard entry includes sunbed access. VIP tables come with dedicated table service and priority sunbed reservation.</p>
-            <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem;">
-              <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width:18px;height:18px;color:var(--accent-warm);flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                Included in all entry tickets
-              </div>
-              <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width:18px;height:18px;color:var(--accent-warm);flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                Towels available to hire
-              </div>
-              <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width:18px;height:18px;color:var(--accent-warm);flex-shrink:0;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                Changing rooms on site
-              </div>
-            </div>
-          </div>
-          <div class="boards-split__img">
-            <!-- TODO: replace with real photography -->
-            <img src="https://placehold.co/800x600/161A22/FFB347" alt="Guests on sunbeds beside Jump Shack pool with panoramic mountain view" loading="lazy" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BAR & FOOD -->
-    <section class="section section--lg" aria-labelledby="food-heading">
-      <div class="container">
-        <div class="boards-split">
-          <div class="boards-split__img">
-            <!-- TODO: replace with real photography -->
-            <img src="https://placehold.co/800x600/161A22/FF4D6E" alt="Cocktails and food at the Jump Shack bar" loading="lazy" />
-          </div>
-          <div class="boards-split__content">
-            <span class="label">Eat &amp; Drink</span>
-            <h2 id="food-heading">The Bar &amp; Kitchen</h2>
-            <p>We keep the menu tight and the quality high. Cocktails built for the heat, food that actually hits, and a bar team that knows what they're doing.</p>
-            <p style="margin-top:1rem;">On Sundays, we serve a proper Sunday Roast — the kind worth booking a table for. Reservations required.</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;">
-              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;">
-                <p style="font-weight:600;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.9rem;">Cocktails</p>
-                <p style="font-size:0.8rem;">Tropical classics and house specials, made properly.</p>
-              </div>
-              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;">
-                <p style="font-weight:600;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.9rem;">Cold Beers</p>
-                <p style="font-size:0.8rem;">Local and imported. Always cold. Always cold.</p>
-              </div>
-              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;">
-                <p style="font-weight:600;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.9rem;">Light Bites</p>
-                <p style="font-size:0.8rem;">Snacks and plates to keep the afternoon going.</p>
-              </div>
-              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;">
-                <p style="font-weight:600;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.9rem;">Sunday Roast</p>
-                <p style="font-size:0.8rem;">Every Sunday. Reservation required.</p>
-              </div>
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__logo">Jump<span>.</span></p>
+            <p>
+              Koh Samui's only mountain beach club. Sunbeds, cocktails, diving
+              boards, and the island's best view — above Chaweng since December
+              2025.
+            </p>
+            <div class="footer__social">
+              <a
+                href="https://www.instagram.com/jumpshacksamui/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jump Shack on Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@jumpshacksamui"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jump Shack on TikTok"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.35 6.35 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/p/Jump-Shack-Samui-61574814333165/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jump Shack on Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/66855758510"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contact Jump Shack on WhatsApp"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WEEKLY EVENTS SCHEDULE -->
-    <section class="section" id="events" style="background-color: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="events-heading">
-      <div class="container">
-        <div class="section-header gsap-hidden">
-          <span class="label">Events</span>
-          <h2 id="events-heading">Weekly Schedule</h2>
-          <p>Something on every day of the week — except Tuesday, when we rest.</p>
-        </div>
-        <div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
-          <table class="schedule-table">
-            <thead>
-              <tr>
-                <th scope="col">Day</th>
-                <th scope="col">Event</th>
-                <th scope="col">Hours</th>
-                <th scope="col">Entry</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>Regular Day</td>
-                <td>12PM – 8PM</td>
-                <td>฿250</td>
-              </tr>
-              <tr class="closed">
-                <td>Tuesday</td>
-                <td><span class="badge badge--closed">Closed</span></td>
-                <td>—</td>
-                <td>—</td>
-              </tr>
-              <tr class="special">
-                <td>Wednesday</td>
-                <td><span class="badge badge--discount">Discount Day</span> — all the same, 40% off</td>
-                <td>12PM – 8PM</td>
-                <td>฿150</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>Regular Day</td>
-                <td>12PM – 8PM</td>
-                <td>฿250</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>Regular Day</td>
-                <td>12PM – 8PM</td>
-                <td>฿250</td>
-              </tr>
-              <tr class="special">
-                <td>Saturday</td>
-                <td><span class="badge badge--party">Pool Party</span> — DJ from 12</td>
-                <td>12PM – 8PM</td>
-                <td>฿250</td>
-              </tr>
-              <tr class="special">
-                <td>Sunday</td>
-                <td><span class="badge badge--special">Sunday Roast</span> — reservations required</td>
-                <td>12PM – 8PM</td>
-                <td>฿250</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-muted" style="margin-top:1.25rem;font-size:0.85rem;">Special events and themed nights added regularly. Follow <a href="https://www.instagram.com/jumpshacksamui/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">@jumpshacksamui</a> for announcements.</p>
-      </div>
-    </section>
-
-    <!-- VIP & PRIVATE HIRE -->
-    <section class="section section--lg" id="vip" aria-labelledby="vip-heading">
-      <div class="container">
-        <div class="section-header text-center gsap-hidden">
-          <span class="label">VIP &amp; Private</span>
-          <h2 id="vip-heading">Take It Up a Level</h2>
-          <p>For groups, celebrations, and corporate events that need something memorable.</p>
-        </div>
-        <div style="display:grid;gap:1.5rem;">
-          <div style="display:grid;gap:1.5rem;" class="info-grid">
-            <div class="info-card">
-              <div class="info-card__icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
-              </div>
-              <h4>VIP Tables</h4>
-              <p>Dedicated table service, premium positioning, and priority sunbed reservation. Minimum spend ฿1,500 per table.</p>
-            </div>
-            <div class="info-card">
-              <div class="info-card__icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-              </div>
-              <h4>Group Bookings</h4>
-              <p>Groups of 10 or more? Get in touch for bespoke group packages with preferential entry and F&amp;B deals.</p>
-            </div>
-            <div class="info-card">
-              <div class="info-card__icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
-              </div>
-              <h4>Exclusive Hire</h4>
-              <p>Book the entire venue for birthdays, corporate events, brand activations or weddings. Custom packages available.</p>
-            </div>
-            <div class="info-card">
-              <div class="info-card__icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" /></svg>
-              </div>
-              <h4>Custom Events</h4>
-              <p>Private DJ sets, themed parties, product launches — we work with you to create something unforgettable on the mountain.</p>
-            </div>
-          </div>
-        </div>
-        <div class="text-center" style="margin-top:2.5rem;">
-          <a href="contact.html" class="btn btn--primary btn--lg" aria-label="Enquire about VIP and private events at Jump Shack">Enquire Now</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="section" id="pricing" style="background-color: var(--bg-card); border-top: 1px solid var(--border);" aria-labelledby="pricing-heading">
-      <div class="container text-center">
-        <div class="section-header gsap-hidden">
-          <span class="label">Pricing</span>
-          <h2 id="pricing-heading">Simple, Honest Entry</h2>
-        </div>
-        <div class="pricing__grid">
-          <div class="pricing-card">
-            <p class="pricing-card__name">Standard Entry</p>
-            <p class="pricing-card__price"><span class="pricing-card__currency">฿</span>250</p>
-            <p class="pricing-card__note">Mon, Thu, Fri, Sat, Sun</p>
+          <div class="footer__col">
+            <h4>Explore</h4>
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Full pool access</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>3m &amp; 5m diving boards</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Sunbed access</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Bar &amp; food service</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">The Experience</a></li>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="contact.html">Find Us</a></li>
             </ul>
-            <a href="https://wa.me/66855758510" class="btn btn--outline" target="_blank" rel="noopener noreferrer" aria-label="Book standard entry via WhatsApp">Book Now</a>
           </div>
-          <div class="pricing-card pricing-card--featured">
-            <span class="pricing-card__badge">Best Value</span>
-            <p class="pricing-card__name">Wednesday Discount</p>
-            <p class="pricing-card__price"><span class="pricing-card__currency">฿</span>150</p>
-            <p class="pricing-card__note">Wednesdays only</p>
+          <div class="footer__col">
+            <h4>Visit</h4>
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Everything in Standard</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>40% off entry</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Less crowd, same views</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Walk-in or pre-book</li>
+              <li><a href="services.html#pricing">Entry Prices</a></li>
+              <li><a href="services.html#events">What's On</a></li>
+              <li><a href="services.html#vip">VIP Tables</a></li>
+              <li><a href="contact.html#private">Private Hire</a></li>
             </ul>
-            <a href="https://wa.me/66855758510" class="btn btn--primary" target="_blank" rel="noopener noreferrer" aria-label="Book Wednesday discount via WhatsApp">Book Wednesday</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://wa.me/66855758510"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jumpshacksamui/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram DM</a
+                >
+              </li>
+              <li><a href="contact.html">Send a Message</a></li>
+            </ul>
           </div>
         </div>
-        <p class="text-muted" style="margin-top:1.5rem;font-size:0.85rem;margin-inline:auto;">VIP tables from ฿1,500 minimum spend. <a href="contact.html" style="color:var(--accent);">Enquire for group &amp; VIP rates.</a></p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <p class="footer__logo">Jump<span>.</span></p>
-          <p>Koh Samui's only mountain beach club. Sunbeds, cocktails, diving boards, and the island's best view — above Chaweng since December 2025.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/jumpshacksamui/" target="_blank" rel="noopener noreferrer" aria-label="Jump Shack on Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@jumpshacksamui" target="_blank" rel="noopener noreferrer" aria-label="Jump Shack on TikTok">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.35 6.35 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Jump-Shack-Samui-61574814333165/" target="_blank" rel="noopener noreferrer" aria-label="Jump Shack on Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://wa.me/66855758510" target="_blank" rel="noopener noreferrer" aria-label="Contact Jump Shack on WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </a>
+        <div class="footer__bottom">
+          <p>&copy; 2025 Jump Shack Samui. All rights reserved.</p>
+          <div style="display: flex; gap: 1.5rem">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
           </div>
         </div>
-        <div class="footer__col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">The Experience</a></li>
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="contact.html">Find Us</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Visit</h4>
-          <ul>
-            <li><a href="services.html#pricing">Entry Prices</a></li>
-            <li><a href="services.html#events">What's On</a></li>
-            <li><a href="services.html#vip">VIP Tables</a></li>
-            <li><a href="contact.html#private">Private Hire</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://wa.me/66855758510" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
-            <li><a href="https://www.instagram.com/jumpshacksamui/" target="_blank" rel="noopener noreferrer">Instagram DM</a></li>
-            <li><a href="contact.html">Send a Message</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2025 Jump Shack Samui. All rights reserved.</p>
-        <div style="display:flex;gap:1.5rem;">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-        </div>
-      </div>
+    </footer>
+
+    <!-- Mobile sticky CTA -->
+    <div
+      class="mobile-cta"
+      role="complementary"
+      aria-label="Mobile booking actions"
+    >
+      <a
+        href="tel:+66855758510"
+        class="btn btn--outline"
+        aria-label="Call Jump Shack"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.5"
+          aria-hidden="true"
+          style="width: 18px; height: 18px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
+        </svg>
+        Call
+      </a>
+      <a
+        href="https://wa.me/66855758510"
+        class="btn btn--primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Book a table via WhatsApp"
+        >Book a Table</a
+      >
     </div>
-  </footer>
 
-  <!-- Mobile sticky CTA -->
-  <div class="mobile-cta" role="complementary" aria-label="Mobile booking actions">
-    <a href="tel:+66855758510" class="btn btn--outline" aria-label="Call Jump Shack">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-      Call
-    </a>
-    <a href="https://wa.me/66855758510" class="btn btn--primary" target="_blank" rel="noopener noreferrer" aria-label="Book a table via WhatsApp">Book a Table</a>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

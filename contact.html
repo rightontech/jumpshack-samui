@@ -1,329 +1,797 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Find Jump Shack above Chaweng, Koh Samui. Contact us via WhatsApp on +66 855 758 510, or send a message for table bookings, group enquiries and private hire." />
-  <title>Find Us — Jump Shack Samui</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="container">
-      <a href="index.html" class="nav__logo" aria-label="Jump Shack — home">Jump<span>.</span></a>
-      <ul class="nav__links" role="list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">The Experience</a></li>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="contact.html" aria-current="page">Find Us</a></li>
-      </ul>
-      <a href="https://wa.me/66855758510" class="btn btn--primary nav__cta" target="_blank" rel="noopener noreferrer" aria-label="Book a table via WhatsApp">Book a Table</a>
-      <button class="nav__hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find Jump Shack above Chaweng, Koh Samui. Contact us via WhatsApp on +66 855 758 510, or send a message for table bookings, group enquiries and private hire."
+    />
+    <title>Find Us — Jump Shack Samui</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="nav__logo" aria-label="Jump Shack — home"
+          >Jump<span>.</span></a
+        >
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">The Experience</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html" aria-current="page">Find Us</a></li>
+        </ul>
+        <a
+          href="https://wa.me/66855758510"
+          class="btn btn--primary nav__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a table via WhatsApp"
+          >Book a Table</a
+        >
+        <button
+          class="nav__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div
+      class="nav__mobile"
+      id="mobile-menu"
+      role="dialog"
+      aria-label="Mobile navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="services.html">The Experience</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Find Us</a>
+      <a
+        href="https://wa.me/66855758510"
+        class="btn btn--primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Book a Table via WhatsApp</a
+      >
     </div>
-  </nav>
-  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html">The Experience</a>
-    <a href="about.html">Our Story</a>
-    <a href="contact.html">Find Us</a>
-    <a href="https://wa.me/66855758510" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book a Table via WhatsApp</a>
-  </div>
 
-  <main>
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-label="Page hero">
+        <div class="page-hero__bg">
+          <!-- TODO: replace with real photo -->
+          <img
+            src="assets/640153328_17905767609359598_3507165503686686654_n.jpg"
+            alt="Jump Shack diving tower exterior with guests on the 5m board, Koh Samui"
+          />
+        </div>
+        <div class="container">
+          <span class="label">Contact &amp; Directions</span>
+          <h1>We're Easy to Find.<br />Hard to Leave.</h1>
+          <p>
+            Above Chaweng, Koh Samui. Open daily (except Tuesday) from 12PM.
+          </p>
+        </div>
+      </section>
 
-    <!-- PAGE HERO -->
-    <section class="page-hero" aria-label="Page hero">
-      <div class="page-hero__bg">
-        <!-- TODO: replace with real photo -->
-        <img src="https://placehold.co/1920x800/0D0F14/FF4D6E" alt="Jump Shack entrance and road access above Chaweng, Koh Samui" />
-      </div>
-      <div class="container">
-        <span class="label">Contact &amp; Directions</span>
-        <h1>We're Easy to Find.<br/>Hard to Leave.</h1>
-        <p>Above Chaweng, Koh Samui. Open daily (except Tuesday) from 12PM.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT LAYOUT -->
-    <section class="section section--lg" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-layout">
-
-          <!-- FORM -->
-          <div>
-            <div class="section-header gsap-hidden" style="margin-bottom:2rem;">
-              <span class="label">Send a Message</span>
-              <h2 id="contact-heading">Get in Touch</h2>
-              <p>Table bookings, group enquiries, private hire — or just to say hi. We reply fast via WhatsApp too.</p>
-            </div>
-
-            <div id="form-success" class="form-success" role="alert">
-              <strong>Message sent!</strong> We'll be in touch shortly. For urgent bookings, WhatsApp us directly on +66 855 758 510.
-            </div>
-
-            <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
-              <!-- Honeypot — hidden from real users, traps bots -->
-              <div class="honeypot" aria-hidden="true">
-                <label for="website-field">Leave this empty</label>
-                <input type="text" id="website-field" name="website" tabindex="-1" autocomplete="off" />
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Full Name <span style="color:var(--accent);" aria-hidden="true">*</span></label>
-                  <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone / WhatsApp</label>
-                  <input type="tel" id="phone" name="phone" placeholder="+66 000 000 000" autocomplete="tel" />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email Address <span style="color:var(--accent);" aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
-              </div>
-
-              <div class="form-group">
-                <label for="enquiry">Type of Enquiry</label>
-                <select id="enquiry" name="enquiry">
-                  <option value="" disabled selected>Select an option</option>
-                  <option value="table">Table Booking</option>
-                  <option value="vip">VIP Table</option>
-                  <option value="private">Private Event Hire</option>
-                  <option value="group">Group Booking (10+)</option>
-                  <option value="sunday-roast">Sunday Roast Reservation</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="date">Preferred Date</label>
-                <input type="date" id="date" name="date" />
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message <span style="color:var(--accent);" aria-hidden="true">*</span></label>
-                <textarea id="message" name="message" placeholder="Tell us what you're after — dates, group size, anything we should know..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn--primary btn--lg" aria-label="Send contact message to Jump Shack">
-                Send Message
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </button>
-            </form>
-          </div>
-
-          <!-- CONTACT INFO -->
-          <div>
-            <div class="section-header gsap-hidden" style="margin-bottom:2rem;">
-              <span class="label">Location &amp; Hours</span>
-              <h2>Come Find Us</h2>
-            </div>
-
-            <!-- Map placeholder -->
-            <div class="map-placeholder" role="img" aria-label="Map placeholder — Jump Shack location above Chaweng, Koh Samui">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-              <p>Map — Jump Shack above Chaweng</p>
-              <p style="font-size:0.75rem;"><!-- TODO: replace with Google Maps iframe embed --></p>
-            </div>
-
-            <div style="display:flex;flex-direction:column;gap:1rem;">
-              <div class="info-card">
-                <div class="info-card__icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                </div>
-                <h4>Address</h4>
-                <p>Above Chaweng<br/>Koh Samui, Surat Thani<br/>Thailand 84320</p>
-              </div>
-
-              <div class="info-card">
-                <div class="info-card__icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" /></svg>
-                </div>
-                <h4>Opening Hours</h4>
+      <!-- CONTACT LAYOUT -->
+      <section
+        class="section section--lg"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container">
+          <div class="contact-layout">
+            <!-- FORM -->
+            <div>
+              <div
+                class="section-header gsap-hidden"
+                style="margin-bottom: 2rem"
+              >
+                <span class="label">Send a Message</span>
+                <h2 id="contact-heading">Get in Touch</h2>
                 <p>
-                  Monday: 12PM – 8PM<br/>
-                  <span style="color:var(--accent);font-weight:600;">Tuesday: Closed</span><br/>
-                  Wednesday: 12PM – 8PM (฿150)<br/>
-                  Thursday: 12PM – 8PM<br/>
-                  Friday: 12PM – 8PM<br/>
-                  Saturday: 12PM – 8PM (Pool Party)<br/>
-                  Sunday: 12PM – 8PM (Sunday Roast)
+                  Table bookings, group enquiries, private hire — or just to say
+                  hi. We reply fast via WhatsApp too.
                 </p>
               </div>
 
-              <div class="info-card">
-                <div class="info-card__icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+              <div id="form-success" class="form-success" role="alert">
+                <strong>Message sent!</strong> We'll be in touch shortly. For
+                urgent bookings, WhatsApp us directly on +66 855 758 510.
+              </div>
+
+              <form
+                id="contact-form"
+                class="contact-form"
+                novalidate
+                aria-label="Contact form"
+              >
+                <!-- Honeypot — hidden from real users, traps bots -->
+                <div class="honeypot" aria-hidden="true">
+                  <label for="website-field">Leave this empty</label>
+                  <input
+                    type="text"
+                    id="website-field"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
                 </div>
-                <h4>WhatsApp / Phone</h4>
-                <a href="https://wa.me/66855758510" target="_blank" rel="noopener noreferrer" style="font-size:1.1rem;font-weight:600;color:var(--text-primary);">+66 855 758 510</a>
-                <p style="margin-top:0.25rem;font-size:0.8rem;">Fastest way to book. We reply quickly.</p>
-              </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name"
+                      >Full Name
+                      <span style="color: var(--accent)" aria-hidden="true"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      required
+                      autocomplete="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone / WhatsApp</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+66 000 000 000"
+                      autocomplete="tel"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email"
+                    >Email Address
+                    <span style="color: var(--accent)" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="enquiry">Type of Enquiry</label>
+                  <select id="enquiry" name="enquiry">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="table">Table Booking</option>
+                    <option value="vip">VIP Table</option>
+                    <option value="private">Private Event Hire</option>
+                    <option value="group">Group Booking (10+)</option>
+                    <option value="sunday-roast">
+                      Sunday Roast Reservation
+                    </option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="date">Preferred Date</label>
+                  <input type="date" id="date" name="date" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message"
+                    >Message
+                    <span style="color: var(--accent)" aria-hidden="true"
+                      >*</span
+                    ></label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell us what you're after — dates, group size, anything we should know..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn--primary btn--lg"
+                  aria-label="Send contact message to Jump Shack"
+                >
+                  Send Message
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="width: 18px; height: 18px"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </button>
+              </form>
             </div>
 
-            <a href="https://wa.me/66855758510" class="btn btn--warm btn--lg" style="margin-top:1.5rem;width:100%;justify-content:center;" target="_blank" rel="noopener noreferrer" aria-label="Message Jump Shack on WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Message Us on WhatsApp
-            </a>
+            <!-- CONTACT INFO -->
+            <div>
+              <div
+                class="section-header gsap-hidden"
+                style="margin-bottom: 2rem"
+              >
+                <span class="label">Location &amp; Hours</span>
+                <h2>Come Find Us</h2>
+              </div>
+
+              <!-- Map placeholder -->
+              <div
+                class="map-placeholder"
+                role="img"
+                aria-label="Map placeholder — Jump Shack location above Chaweng, Koh Samui"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <p>Map — Jump Shack above Chaweng</p>
+                <p style="font-size: 0.75rem">
+                  <!-- TODO: replace with Google Maps iframe embed -->
+                </p>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 1rem">
+                <div class="info-card">
+                  <div class="info-card__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>Address</h4>
+                  <p>
+                    Above Chaweng<br />Koh Samui, Surat Thani<br />Thailand
+                    84320
+                  </p>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-card__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>Opening Hours</h4>
+                  <p>
+                    Monday: 12PM – 8PM<br />
+                    <span style="color: var(--accent); font-weight: 600"
+                      >Tuesday: Closed</span
+                    ><br />
+                    Wednesday: 12PM – 8PM (฿150)<br />
+                    Thursday: 12PM – 8PM<br />
+                    Friday: 12PM – 8PM<br />
+                    Saturday: 12PM – 8PM (Pool Party)<br />
+                    Sunday: 12PM – 8PM (Sunday Roast)
+                  </p>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-card__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>WhatsApp / Phone</h4>
+                  <a
+                    href="https://wa.me/66855758510"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      color: var(--text-primary);
+                    "
+                    >+66 855 758 510</a
+                  >
+                  <p style="margin-top: 0.25rem; font-size: 0.8rem">
+                    Fastest way to book. We reply quickly.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/66855758510"
+                class="btn btn--warm btn--lg"
+                style="margin-top: 1.5rem; width: 100%; justify-content: center"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Message Jump Shack on WhatsApp"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="width: 20px; height: 20px"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Message Us on WhatsApp
+              </a>
+            </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section class="section" style="background-color: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="faq-heading">
+      <!-- FAQ -->
+      <section
+        class="section"
+        style="
+          background-color: var(--bg-card);
+          border-top: 1px solid var(--border);
+          border-bottom: 1px solid var(--border);
+        "
+        aria-labelledby="faq-heading"
+      >
+        <div class="container">
+          <div style="max-width: 760px; margin-inline: auto">
+            <div class="section-header gsap-hidden">
+              <span class="label">FAQ</span>
+              <h2 id="faq-heading">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq" role="list">
+              <div class="faq__item" role="listitem">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-1"
+                >
+                  How do I get to Jump Shack?
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="faq__answer" id="faq-1" role="region">
+                  <p>
+                    Jump Shack is located above Chaweng on Koh Samui. The
+                    easiest way to reach us is by scooter, taxi, or Grab.
+                    WhatsApp us for the exact directions link — the GPS
+                    coordinates can vary between maps apps, so we recommend
+                    getting the pin directly from us before heading up.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item" role="listitem">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-2"
+                >
+                  Do I need to book in advance?
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="faq__answer" id="faq-2" role="region">
+                  <p>
+                    Walk-ins are welcome most days. However, we recommend
+                    booking ahead for Saturday Pool Parties, Sunday Roast, VIP
+                    tables, and group visits of 6+. WhatsApp us on +66 855 758
+                    510 to reserve.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item" role="listitem">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-3"
+                >
+                  Is there a minimum age for the diving boards?
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="faq__answer" id="faq-3" role="region">
+                  <p>
+                    The 3m board is open to guests who are confident swimmers.
+                    The 5m board is recommended for adults and older teenagers
+                    (16+). Children under 16 must be accompanied by a parent or
+                    guardian. Our lifeguard is on duty throughout opening hours
+                    and will advise on the day.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item" role="listitem">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-4"
+                >
+                  What is the dress code?
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="faq__answer" id="faq-4" role="region">
+                  <p>
+                    Smart casual. Swimwear is welcome poolside. We ask that you
+                    cover up for entry and when in the bar and dining areas.
+                    Flip flops and sandals are fine. Smart shorts, sundresses,
+                    and light summer clothing all work perfectly. No football
+                    shirts or sleeveless vests at the bar please.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item" role="listitem">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-5"
+                >
+                  What happens if it rains?
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="faq__answer" id="faq-5" role="region">
+                  <p>
+                    We operate through light rain — the view is still
+                    spectacular and the bar stays open. During heavy storms, the
+                    diving boards may be temporarily closed for safety. We will
+                    update our Instagram and WhatsApp if we need to close
+                    unexpectedly due to weather. Koh Samui's dry season
+                    (Dec–April) is the best time to visit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item" role="listitem">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-6"
+                >
+                  Can I hire the whole venue privately?
+                  <svg
+                    class="faq__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="faq__answer" id="faq-6" role="region">
+                  <p id="private">
+                    Yes — Jump Shack is available for exclusive private hire.
+                    Birthdays, corporate events, brand activations, and weddings
+                    are all possible. We work with you to create a bespoke
+                    package including catering, entertainment, and decoration.
+                    Send us a message or WhatsApp us with your date and group
+                    size to discuss.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
       <div class="container">
-        <div style="max-width:760px;margin-inline:auto;">
-          <div class="section-header gsap-hidden">
-            <span class="label">FAQ</span>
-            <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__logo">Jump<span>.</span></p>
+            <p>
+              Koh Samui's only mountain beach club. Sunbeds, cocktails, diving
+              boards, and the island's best view — above Chaweng since December
+              2025.
+            </p>
+            <div class="footer__social">
+              <a
+                href="https://www.instagram.com/jumpshacksamui/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jump Shack on Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@jumpshacksamui"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jump Shack on TikTok"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.35 6.35 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/p/Jump-Shack-Samui-61574814333165/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jump Shack on Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/66855758510"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contact Jump Shack on WhatsApp"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-          <div class="faq" role="list">
-
-            <div class="faq__item" role="listitem">
-              <button class="faq__question" aria-expanded="false" aria-controls="faq-1">
-                How do I get to Jump Shack?
-                <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-              </button>
-              <div class="faq__answer" id="faq-1" role="region">
-                <p>Jump Shack is located above Chaweng on Koh Samui. The easiest way to reach us is by scooter, taxi, or Grab. WhatsApp us for the exact directions link — the GPS coordinates can vary between maps apps, so we recommend getting the pin directly from us before heading up.</p>
-              </div>
-            </div>
-
-            <div class="faq__item" role="listitem">
-              <button class="faq__question" aria-expanded="false" aria-controls="faq-2">
-                Do I need to book in advance?
-                <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-              </button>
-              <div class="faq__answer" id="faq-2" role="region">
-                <p>Walk-ins are welcome most days. However, we recommend booking ahead for Saturday Pool Parties, Sunday Roast, VIP tables, and group visits of 6+. WhatsApp us on +66 855 758 510 to reserve.</p>
-              </div>
-            </div>
-
-            <div class="faq__item" role="listitem">
-              <button class="faq__question" aria-expanded="false" aria-controls="faq-3">
-                Is there a minimum age for the diving boards?
-                <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-              </button>
-              <div class="faq__answer" id="faq-3" role="region">
-                <p>The 3m board is open to guests who are confident swimmers. The 5m board is recommended for adults and older teenagers (16+). Children under 16 must be accompanied by a parent or guardian. Our lifeguard is on duty throughout opening hours and will advise on the day.</p>
-              </div>
-            </div>
-
-            <div class="faq__item" role="listitem">
-              <button class="faq__question" aria-expanded="false" aria-controls="faq-4">
-                What is the dress code?
-                <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-              </button>
-              <div class="faq__answer" id="faq-4" role="region">
-                <p>Smart casual. Swimwear is welcome poolside. We ask that you cover up for entry and when in the bar and dining areas. Flip flops and sandals are fine. Smart shorts, sundresses, and light summer clothing all work perfectly. No football shirts or sleeveless vests at the bar please.</p>
-              </div>
-            </div>
-
-            <div class="faq__item" role="listitem">
-              <button class="faq__question" aria-expanded="false" aria-controls="faq-5">
-                What happens if it rains?
-                <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-              </button>
-              <div class="faq__answer" id="faq-5" role="region">
-                <p>We operate through light rain — the view is still spectacular and the bar stays open. During heavy storms, the diving boards may be temporarily closed for safety. We will update our Instagram and WhatsApp if we need to close unexpectedly due to weather. Koh Samui's dry season (Dec–April) is the best time to visit.</p>
-              </div>
-            </div>
-
-            <div class="faq__item" role="listitem">
-              <button class="faq__question" aria-expanded="false" aria-controls="faq-6">
-                Can I hire the whole venue privately?
-                <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-              </button>
-              <div class="faq__answer" id="faq-6" role="region">
-                <p id="private">Yes — Jump Shack is available for exclusive private hire. Birthdays, corporate events, brand activations, and weddings are all possible. We work with you to create a bespoke package including catering, entertainment, and decoration. Send us a message or WhatsApp us with your date and group size to discuss.</p>
-              </div>
-            </div>
-
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">The Experience</a></li>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="contact.html">Find Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Visit</h4>
+            <ul>
+              <li><a href="services.html#pricing">Entry Prices</a></li>
+              <li><a href="services.html#events">What's On</a></li>
+              <li><a href="services.html#vip">VIP Tables</a></li>
+              <li><a href="contact.html#private">Private Hire</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://wa.me/66855758510"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jumpshacksamui/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram DM</a
+                >
+              </li>
+              <li><a href="contact.html">Send a Message</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2025 Jump Shack Samui. All rights reserved.</p>
+          <div style="display: flex; gap: 1.5rem">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <p class="footer__logo">Jump<span>.</span></p>
-          <p>Koh Samui's only mountain beach club. Sunbeds, cocktails, diving boards, and the island's best view — above Chaweng since December 2025.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/jumpshacksamui/" target="_blank" rel="noopener noreferrer" aria-label="Jump Shack on Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@jumpshacksamui" target="_blank" rel="noopener noreferrer" aria-label="Jump Shack on TikTok">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.35 6.35 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/p/Jump-Shack-Samui-61574814333165/" target="_blank" rel="noopener noreferrer" aria-label="Jump Shack on Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://wa.me/66855758510" target="_blank" rel="noopener noreferrer" aria-label="Contact Jump Shack on WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">The Experience</a></li>
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="contact.html">Find Us</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Visit</h4>
-          <ul>
-            <li><a href="services.html#pricing">Entry Prices</a></li>
-            <li><a href="services.html#events">What's On</a></li>
-            <li><a href="services.html#vip">VIP Tables</a></li>
-            <li><a href="contact.html#private">Private Hire</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://wa.me/66855758510" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
-            <li><a href="https://www.instagram.com/jumpshacksamui/" target="_blank" rel="noopener noreferrer">Instagram DM</a></li>
-            <li><a href="contact.html">Send a Message</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2025 Jump Shack Samui. All rights reserved.</p>
-        <div style="display:flex;gap:1.5rem;">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-        </div>
-      </div>
+    <!-- Mobile sticky CTA -->
+    <div
+      class="mobile-cta"
+      role="complementary"
+      aria-label="Mobile booking actions"
+    >
+      <a
+        href="tel:+66855758510"
+        class="btn btn--outline"
+        aria-label="Call Jump Shack"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.5"
+          aria-hidden="true"
+          style="width: 18px; height: 18px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
+        </svg>
+        Call
+      </a>
+      <a
+        href="https://wa.me/66855758510"
+        class="btn btn--primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Book a table via WhatsApp"
+        >Book a Table</a
+      >
     </div>
-  </footer>
 
-  <!-- Mobile sticky CTA -->
-  <div class="mobile-cta" role="complementary" aria-label="Mobile booking actions">
-    <a href="tel:+66855758510" class="btn btn--outline" aria-label="Call Jump Shack">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-      Call
-    </a>
-    <a href="https://wa.me/66855758510" class="btn btn--primary" target="_blank" rel="noopener noreferrer" aria-label="Book a table via WhatsApp">Book a Table</a>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
