@@ -1350,6 +1350,29 @@ p {
 }
 
 /* ============================================================
+   VIDEO REEL
+   ============================================================ */
+.reel-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.reel-video {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+  display: block;
+}
+@media (min-width: 768px) {
+  .reel-video {
+    max-width: 420px;
+  }
+}
+
+/* ============================================================
    GSAP — Initial hidden state (JS adds .animate class)
    ============================================================ */
 .gsap-hidden {
